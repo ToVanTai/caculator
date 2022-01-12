@@ -52,7 +52,6 @@
     transform-origin: right bottom;/**/
     transition: transform .3s ease;
     color: var(--calc-res-color);
-    overflow-x:auto;
 }
 .caculator__result__exp:last-child{
     position: absolute;
