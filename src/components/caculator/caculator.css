@@ -1,8 +1,8 @@
 .caculator{
 
     padding: 20px;
-    height: 700px;
-    width: 400px;
+    height: 500px;
+    width: 300px;
     overflow: hidden;
     border-radius: 20px;
     background-color: var(--calc-bg);
@@ -47,7 +47,7 @@
     justify-content: flex-end;
 }
 .caculator__result__exp{
-    font-size: 3.5rem;
+    font-size: 1.8rem;
     line-height: 1;
     transform-origin: right bottom;/**/
     transition: transform .3s ease;
@@ -64,8 +64,8 @@
 }
 @media only screen and (max-width: 800px){
     .caculator{
-        width: 100%;
-        height: 100vh;
+        max-width: 300px;
+        max-height: 500px;
         border-radius: 0;
     }
 }

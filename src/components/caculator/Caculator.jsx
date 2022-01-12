@@ -8,7 +8,7 @@ const Caculator = () => {
     useEffect(()=>{
         let btns=Array.from(btnsRef.current.querySelectorAll('button'));
         btns.forEach((btn)=>btn.style.height=btn.offsetWidth+'px')
-    },[]);
+    });
     const buttonClick = item=>{
         let expDiv= expRef.current;
         if(item.action===BTN_ACTIONS.THEME){
@@ -32,7 +32,7 @@ const Caculator = () => {
             expDiv.parentNode.querySelector('div:last-child').remove()
             expDiv.parentNode.appendChild(cloneNode);
             console.log([expDiv])
-            let transform =`translateY(${-(cloneNode.offsetHeight + 10)+'px'}) scale(0.4)`;
+            let transform =`translateY(${-(cloneNode.offsetHeight + 10)+'px'}) scale(0.6)`;
             console.log(transform)
             try{
                 let res=eval(expresstion);
